@@ -29,7 +29,7 @@ int main()
 
         }
     }
-    printf("\nPName Arrtime Burstime Start TAT Finisjh");
+    printf("\nPName Arrtime Burstime Start TAT Finish");
     for(i=0;i<n;i++)
     {
         printf("\n%s\t%6d\t\t%6d\t%6d\t%6d\t%6d",pn[i],arr[i],bur[i],star[i],tat[i],finish[i]);
