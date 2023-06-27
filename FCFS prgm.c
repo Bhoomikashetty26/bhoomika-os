@@ -8,17 +8,17 @@ int main()
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        printf("Enter the Process Name,Arrival Time & Burst Time:");
-        scanf("%s%d%d",&pn[i],&bur[i]);
+        printf("Enter the Process name,Arrival time and Burst time:");
+        scanf("%zs%d%d",&pn[i],&arr[i],&bur[i]);
     }
     for(i=0;i<n;i++)
     {
         if(i==0)
         {
-            star[i]=arr[i];
-            wt[i]=star[i]-arr[i];
-            finish[i]=star[i]+bur[i];
-            tat[i]=finish[i]-arr[i];
+        star[i]=arr[i];
+        wt[i]=star[i]-arr[i];
+        finish[i]=star[i]+bur[i];
+        tat[i]=finish[i]-arr[i];
         }
         else
         {
@@ -26,17 +26,16 @@ int main()
             wt[i]=star[i]-arr[i];
             finish[i]=star[i]+bur[i];
             tat[i]=finish[i]-arr[i];
+
         }
     }
-    printf("\nPName Arrtime Burstime Start TAT Finish");
+    printf("\nPName Arrtime Burstime Start TAT Finisjh");
     for(i=0;i<n;i++)
     {
         printf("\n%s\t%6d\t\t%6d\t%6d\t%6d\t%6d",pn[i],arr[i],bur[i],star[i],tat[i],finish[i]);
         totwt+=wt[i];
         tottat+=tat[i];
     }
-    printf("\nAverage Waiting time:%f",(float)totwt);
-    printf("\nAverage Turn Around Time:%f",(float)tottat);
-
+    printf("\nAverage Waiting time:%f",(float)totwt/n);
+    printf("\nAverage Waiting time:%f",(float)tottat/n);
 }
-
