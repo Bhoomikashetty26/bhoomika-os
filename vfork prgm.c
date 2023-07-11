@@ -35,3 +35,12 @@ int main()
     return 0;
 
 }
+
+OUTPUT:
+Child process:Hello I'm the child
+Child process:My pid is 17413
+Child process : My parent's pid is 17412
+Parent process:Hello I'm the parent
+Parent process:My Pid is 17412
+Parent process:My vhild's PID is 17413
+Parent process:child process terminated normally
