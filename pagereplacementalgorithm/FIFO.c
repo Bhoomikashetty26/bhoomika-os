@@ -9,7 +9,7 @@ int main()
     scanf("%d",&a[i]);
     printf("\n enter the number of frames:");
     scanf("%d",&no);
-    for(i=0;i<no;i++)
+    for(i=0;i<=no;i++)
     frame[i]=-1;
     j=0;
     printf("\tinput\t page frames\n");
