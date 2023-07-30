@@ -34,8 +34,8 @@ int main()
     return 0;
 }
 
-OUTPUT:
-Enter the number of pages:7 
+//*output: 
+     Enter the number of pages:7 
      Enter the page number:1 3 0 3 5 6 3 
      Enter the number of frames:3 
              input   page frames 
@@ -46,4 +46,5 @@ Enter the number of pages:7
      5               5       3       0 
      6               5       6       0 
      3               5       6       3 
-     Page fault is 6
+     Page fault is 6 
+     *//
