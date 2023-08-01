@@ -22,4 +22,21 @@ int main()
        printf("\nTotal head movement is %d\n",totalheadmovement);
     return 0;
     }
+OUTPUT:
+Enter the no of requests:
+7
+Enter the requests sequence
+82
+170
+43
+140
+24
+16
+190
+Enter the initial head position
+50
+sequence of request access:
+82 170 43 140 24 16 190 
+Total head movement is 642
+[1] + Done     
     
